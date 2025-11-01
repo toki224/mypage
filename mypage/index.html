@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>松尾都気 - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">松尾都気</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-ja="自己紹介" data-en="About">自己紹介</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-ja="スキル" data-en="Skills">スキル</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-ja="プロジェクト" data-en="Projects">プロジェクト</a>
+                </li>
+                <li class="nav-item">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-text">EN</span>
+                        <i class="fas fa-globe"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- パーティクルアニメーション -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span data-ja="こんにちは<br><span class='highlight'>松尾都気</span>です" data-en="Hello<br>I'm <span class='highlight'>Matsuo Toki</span>">こんにちは<br><span class="highlight">松尾都気</span>です</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span data-ja="IT企業で働きたい学生エンジニアです<br>新しい技術を学び、価値あるサービスを作りたいです" data-en="Student Engineer aspiring to work in IT companies<br>I want to learn new technologies and create valuable services">IT企業で働きたい学生エンジニアです<br>新しい技術を学び、価値あるサービスを作りたいです</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-ja="プロジェクトを見る" data-en="View Projects">プロジェクトを見る</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/300x300/4F46E5/FFFFFF?text=Your+Photo" alt="プロフィール写真">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-ja="自己紹介" data-en="About Me">自己紹介</h2>
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h3 data-ja="こんにちは！" data-en="Hello!">こんにちは！</h3>
+                    <p data-ja="私はさいたまIT・WEB専門学校高度専門士情報技術科3年の松尾都気です。プログラミングに興味を持ち始めたのは○年前で、現在はWebアプリケーションの開発を中心に学習しています。" data-en="I'm Matsuo Toki, a 3rd year student in the Advanced Specialist Information Technology Department at Saitama IT & WEB Professional School. I became interested in programming ○ years ago and am currently focusing on learning web application development.">
+                        私はさいたまIT・WEB専門学校高度専門士情報技術科3年の松尾都気です。
+                        プログラミングに興味を持ち始めたのは○年前で、
+                        現在はWebアプリケーションの開発を中心に学習しています。
+                    </p>
+                    <p data-ja="IT企業で働くことを志望している理由は、技術を通じて人々の生活を豊かにしたいと考えているからです。特にユーザー体験を重視したプロダクト開発に興味があります。" data-en="The reason I aspire to work at an IT company is because I want to enrich people's lives through technology. I'm particularly interested in product development that prioritizes user experience.">
+                        IT企業で働くことを志望している理由は、
+                        技術を通じて人々の生活を豊かにしたいと考えているからです。
+                        特にユーザー体験を重視したプロダクト開発に興味があります。
+                    </p>
+                    <p data-ja="将来はフルスタックエンジニアとして、バックエンドからフロントエンドまで幅広く対応できるエンジニアになりたいと考えています。" data-en="In the future, I want to become a full-stack engineer who can handle everything from backend to frontend development.">
+                        将来はフルスタックエンジニアとして、
+                        バックエンドからフロントエンドまで幅広く対応できる
+                        エンジニアになりたいと考えています。
+                    </p>
+                </div>
+                <div class="about-stats slide-in-right">
+                    <div class="stat-item bounce-in">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label" data-ja="年の学習経験" data-en="Years of Learning">年の学習経験</div>
+                    </div>
+                    <div class="stat-item bounce-in">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label" data-ja="完成したプロジェクト" data-en="Completed Projects">完成したプロジェクト</div>
+                    </div>
+                    <div class="stat-item bounce-in">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label" data-ja="使用言語" data-en="Languages Used">使用言語</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技術スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>プログラミング言語</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>フレームワーク・ライブラリ</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>ツール・環境</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">プロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4F46E5/FFFFFF?text=Project+1" alt="プロジェクト1">
+                    </div>
+                    <div class="project-content">
+                        <h3>ToDoアプリ</h3>
+                        <p>
+                            ReactとNode.jsを使用して作成したタスク管理アプリケーション。
+                            ユーザー登録機能、タスクの追加・削除・編集機能を実装。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/10B981/FFFFFF?text=Project+2" alt="プロジェクト2">
+                    </div>
+                    <div class="project-content">
+                        <h3>ECサイト</h3>
+                        <p>
+                            Djangoを使用して作成したオンラインショッピングサイト。
+                            商品管理、カート機能、決済システムを実装。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/F59E0B/FFFFFF?text=Project+3" alt="プロジェクト3">
+                    </div>
+                    <div class="project-content">
+                        <h3>ポートフォリオサイト</h3>
+                        <p>
+                            HTML、CSS、JavaScriptを使用して作成したレスポンシブな
+                            ポートフォリオサイト。モダンなデザインとスムーズなアニメーションを実装。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 松尾都気. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
