@@ -97,23 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
     bounceElements.forEach(el => observer.observe(el));
 });
 
-// Skill bars animation
-const skillBars = document.querySelectorAll('.skill-progress');
+// Skill stars animation
+const skillItems = document.querySelectorAll('.skill-item');
 const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const skillBar = entry.target;あれんあれん
-            const width = skillBar.style.width;
-            skillBar.style.width = '0%';
-            setTimeout(() => {
-                skillBar.style.width = width;
-            }, 200);
+            const stars = entry.target.querySelectorAll('.star');
+            stars.forEach((star, index) => {
+                setTimeout(() => {
+                    star.style.opacity = '0';
+                    star.style.transform = 'scale(0)';
+                    star.style.transition = 'all 0.3s ease';
+                    setTimeout(() => {
+                        star.style.opacity = '1';
+                        star.style.transform = 'scale(1)';
+                    }, 50);
+                }, index * 100);
+            });
+            skillObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.5 });
+}, { threshold: 0.3 });
 
-skillBars.forEach(bar => {
-    skillObserver.observe(bar);
+skillItems.forEach(item => {
+    skillObserver.observe(item);
 });
 
 
@@ -256,6 +263,7 @@ class LanguageManager {
             const text = element.getAttribute(`data-${lang}`);
             if (text) {
                 // HTMLタグを正しく処理するため、innerHTMLを使用
+                // getAttributeは既にHTMLエンティティをデコードしている
                 element.innerHTML = text;
             }
         });

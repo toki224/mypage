@@ -12,9 +12,6 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">松尾都気</a>
-            </div>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#home" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a>
@@ -60,7 +57,7 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span data-ja="こんにちは<br><span class='highlight'>松尾都気</span>です" data-en="Hello<br>I'm <span class='highlight'>Matsuo Toki</span>">こんにちは<br><span class="highlight">松尾都気</span>です</span>
+                    <span data-ja="こんにちは&lt;br&gt;&lt;span class='highlight'&gt;松尾都気&lt;/span&gt;です" data-en="Hello&lt;br&gt;I'm &lt;span class='highlight'&gt;Matsuo Toki&lt;/span&gt;">こんにちは<br><span class="highlight">松尾都気</span>です</span>
                 </h1>
                 <p class="hero-subtitle">
                     <span data-ja="IT企業で働きたい学生エンジニアです<br>新しい技術を学び、価値あるサービスを作りたいです" data-en="Student Engineer aspiring to work in IT companies<br>I want to learn new technologies and create valuable services">IT企業で働きたい学生エンジニアです<br>新しい技術を学び、価値あるサービスを作りたいです</span>
@@ -121,93 +118,165 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">技術スキル</h2>
+            <h2 class="section-title" data-ja="技術スキル" data-en="Technical Skills">技術スキル</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>プログラミング言語</h3>
+                    <h3 data-ja="プログラミング言語" data-en="Programming Languages">プログラミング言語</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>フレームワーク・ライブラリ</h3>
+                    <h3 data-ja="フレームワーク・ライブラリ" data-en="Frameworks & Libraries">フレームワーク・ライブラリ</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Express</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Express</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Bootstrap</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>ツール・環境</h3>
+                    <h3 data-ja="ツール・環境" data-en="Tools & Environments">ツール・環境</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">Git/GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">Git/GitHub</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">VS Code</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MySQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 60%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
+                            <div class="skill-header">
+                                <span class="skill-name">AWS</span>
+                            </div>
+                            <div class="skill-stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
                             </div>
                         </div>
                     </div>
@@ -219,15 +288,15 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">プロジェクト</h2>
+            <h2 class="section-title" data-ja="プロジェクト" data-en="Projects">プロジェクト</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/400x250/8B4513/FFFFFF?text=Project+1" alt="プロジェクト1">
                     </div>
                     <div class="project-content">
-                        <h3>ToDoアプリ</h3>
-                        <p>
+                        <h3 data-ja="ToDoアプリ" data-en="ToDo App">ToDoアプリ</h3>
+                        <p data-ja="ReactとNode.jsを使用して作成したタスク管理アプリケーション。ユーザー登録機能、タスクの追加・削除・編集機能を実装。" data-en="Task management application created with React and Node.js. Implemented user registration, task addition, deletion, and editing features.">
                             ReactとNode.jsを使用して作成したタスク管理アプリケーション。
                             ユーザー登録機能、タスクの追加・削除・編集機能を実装。
                         </p>
@@ -252,8 +321,8 @@
                         <img src="https://via.placeholder.com/400x250/A0522D/FFFFFF?text=Project+2" alt="プロジェクト2">
                     </div>
                     <div class="project-content">
-                        <h3>ECサイト</h3>
-                        <p>
+                        <h3 data-ja="ECサイト" data-en="E-commerce Site">ECサイト</h3>
+                        <p data-ja="Djangoを使用して作成したオンラインショッピングサイト。商品管理、カート機能、決済システムを実装。" data-en="Online shopping site created with Django. Implemented product management, cart functionality, and payment system.">
                             Djangoを使用して作成したオンラインショッピングサイト。
                             商品管理、カート機能、決済システムを実装。
                         </p>
@@ -278,8 +347,8 @@
                         <img src="https://via.placeholder.com/400x250/D2B48C/333333?text=Project+3" alt="プロジェクト3">
                     </div>
                     <div class="project-content">
-                        <h3>ポートフォリオサイト</h3>
-                        <p>
+                        <h3 data-ja="ポートフォリオサイト" data-en="Portfolio Site">ポートフォリオサイト</h3>
+                        <p data-ja="HTML、CSS、JavaScriptを使用して作成したレスポンシブなポートフォリオサイト。モダンなデザインとスムーズなアニメーションを実装。" data-en="Responsive portfolio site created with HTML, CSS, and JavaScript. Implemented modern design and smooth animations.">
                             HTML、CSS、JavaScriptを使用して作成したレスポンシブな
                             ポートフォリオサイト。モダンなデザインとスムーズなアニメーションを実装。
                         </p>

@@ -379,44 +379,56 @@ section {
 
 .skill-item {
     margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.skill-header {
+    margin-bottom: 0.75rem;
 }
 
 .skill-name {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
+    font-size: 1rem;
 }
 
-.skill-bar {
-    height: 8px;
-    background: #e5e7eb;
-    border-radius: 4px;
-    overflow: hidden;
+.skill-level {
+    font-size: 0.875rem;
+    color: #8B4513;
+    background: #f5e6d3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-weight: 500;
 }
 
-.skill-progress {
-    height: 100%;
-    background: linear-gradient(90deg, #8B4513, #D2B48C);
-    border-radius: 4px;
-    transition: width 1s ease;
-    position: relative;
+.skill-stars {
+    display: flex;
+    gap: 0.25rem;
 }
 
-.skill-progress::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    animation: shimmer 2s infinite;
+.star {
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: all 0.2s ease;
+    opacity: 0;
+    transform: scale(0);
 }
 
-@keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+.star.filled {
+    color: #8B4513;
+    text-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.star:hover {
+    transform: scale(1.2);
 }
 
 /* Projects Section */
