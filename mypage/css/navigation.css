@@ -22,13 +22,13 @@
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #4F46E5;
+    color: #8B4513;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-logo a:hover {
-    color: #3730A3;
+    color: #654321;
 }
 
 .nav-menu {
@@ -46,7 +46,7 @@
 }
 
 .nav-link:hover {
-    color: #4F46E5;
+    color: #8B4513;
 }
 
 .nav-link::after {
@@ -56,7 +56,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #4F46E5;
+    background: #8B4513;
     transition: width 0.3s ease;
 }
 
@@ -66,7 +66,7 @@
 
 /* Language Toggle Button */
 .lang-toggle {
-    background: linear-gradient(135deg, #4F46E5, #FBBF24);
+    background: linear-gradient(135deg, #8B4513, #D2B48C);
     color: white;
     border: none;
     padding: 8px 16px;
@@ -82,7 +82,7 @@
 
 .lang-toggle:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
 }
 
 .lang-toggle .fas {

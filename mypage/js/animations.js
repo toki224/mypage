@@ -131,7 +131,7 @@ class AnimationManager {
             }
             
             .nav-link.active {
-                color: #4F46E5;
+                color: #8B4513;
             }
             
             .nav-link.active::after {
