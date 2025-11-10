@@ -95,6 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const bounceElements = document.querySelectorAll('.bounce-in');
     bounceElements.forEach(el => observer.observe(el));
+    
+    // Update completed projects count dynamically
+    const projectCountElement = document.getElementById('projectCount');
+    if (projectCountElement) {
+        const projectCards = document.querySelectorAll('.projects .project-card');
+        projectCountElement.textContent = projectCards.length.toString();
+    }
 });
 
 // Skill stars animation
